@@ -256,7 +256,7 @@ public class WaterfallLayout: UICollectionViewLayout {
     private func layoutItems(position: CGFloat, collectionView: UICollectionView, delegate: WaterfallLayoutDelegate, section: Int) {
         let sectionInset = self.sectionInset(for: section)
         let minimumInteritemSpacing = self.minimumInteritemSpacing(for: section)
-        let minimumLineSpacing = self.minimumInteritemSpacing(for: section)
+        let minimumLineSpacing = self.minimumLineSpacing(for: section)
 
         let columnCount = delegate.collectionViewLayout(for: section).column
         let itemCount = collectionView.numberOfItems(inSection: section)
